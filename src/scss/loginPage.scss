@@ -1,0 +1,83 @@
+@import "variables";
+
+.login_page {
+
+    .remember_me {
+        margin-bottom: 10px;
+    }
+
+    .logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 45px;
+        width: 300px;
+    }
+
+    .logo_no_padding_bottom_top {
+        display: block;
+        padding: 0 45px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 300px;
+    }
+
+    .border_light {
+        border: 1px solid rgba(223, 231, 235, 0.5);
+        padding: 25px;
+        background: white;
+    }
+
+    .login_form {
+
+        &>div.border_light {
+            border-top: 3px $primary-color solid;
+            -webkit-box-shadow: 0px 3px 5px 3px rgba(189, 185, 189, 0.3);
+            -moz-box-shadow: 0px 3px 5px 3px rgba(189, 185, 189, 0.3);
+            box-shadow: 0px 3px 5px 3px rgba(189, 185, 189, 0.3);
+
+        }
+
+        .form-title {
+            margin-bottom: -10px;
+        }
+
+        .remember_me label {
+            color: initial;
+            font-weight: initial;
+        }
+
+        .input_with_link {
+            position: relative;       
+        }
+
+        a {
+            font-size: 12px;
+            color: #1da177;
+            padding-left: 3px;
+        }
+
+        h2 {
+            text-align: center;
+            padding: 10px;
+        }
+
+        img {
+            width: 125px;
+        }
+
+        position: relative;
+        top: 50px;
+        max-width: 400px;
+        margin: auto;
+
+        button {
+            width: 100%;
+        }
+
+        form>.form-group.field.field-object {
+            padding: 0;
+        }
+    }
+}

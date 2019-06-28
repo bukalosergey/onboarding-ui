@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+
+  data-access-tool-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: DataAccessTool.UI
+    networks:
+      - data-access-tool-network
+    environment:
+      # variables should be specified in shell
+      - APP_OKTA_CLIENT_ID
+      - APP_OKTA_ISSUER
+      - APP_API_BASE_URL
+    ports:
+      - "5223:5000"
+
+networks:
+  data-access-tool-network:
+    name: data-access-tool-network
