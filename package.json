@@ -11,7 +11,7 @@
     "enzyme-adapter-react-16": "^1.14.0",
     "formik": "^1.5.7",
     "jquery": "^3.4.1",
-    "node-sass": "^4.12.0",
+    "node-sass": "^7.0.0",
     "open-iconic": "^1.1.1",
     "react": "^16.9.0-alpha.0",
     "react-bootstrap": "^1.0.0-beta.9",
